@@ -1,6 +1,6 @@
 {
-  "name": "node-logger",
-  "version": "1.0.0",
+  "name": "n2logger",
+  "version": "1.0.1",
   "description": "node simple logger level",
   "main": "index.js",
   "scripts": {
@@ -8,13 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/heryvictor/node-logger"
+    "url": "https://github.com/heryvictor/n2logger"
   },
   "keywords": [
     "node",
     "logger"
   ],
-  "author": "Hery Victor",
+  "author":{
+    "name" : "Hery Victor",
+    "email" : "heryvictor@gmail.com",
+    "url" : "https://github.com/heryvictor"
+  },
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",

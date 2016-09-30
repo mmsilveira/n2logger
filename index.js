@@ -1,7 +1,7 @@
 const levels = ['DEBUG', 'INFO', 'WARN', 'ERROR'];
 
 module.exports = {
-    new: function (namespace, level, output) {
+    new: function(namespace, level, output) {
         return new Logger(namespace, level, output);
     }
 };
