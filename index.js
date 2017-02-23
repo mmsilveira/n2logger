@@ -11,23 +11,29 @@ function Logger(namespace, level, output) {
     this.namespace = namespace || '';
     this.output = output || console.log;
     this.outputError = console.error;
-    this.debug = function(message) {
-        log('DEBUG', message);
+
+    this.debug = function() {
+        log('DEBUG', argsToString(arguments));
     };
 
-    this.info = function(message) {
-        log('INFO', message);
+    this.info = function() {
+        log('INFO', argsToString(arguments));
     };
 
-    this.error = function(message) {
-        log('ERROR', message);
+    this.warn = function() {
+        log('WARN', argsToString(arguments));
     };
 
-    this.warn = function(message) {
-        log('WARN', message);
+    this.error = function() {
+        log('ERROR', argsToString(arguments));
     };
 
     var self = this;
+
+    function argsToString(messages) {
+        var args = Array.prototype.slice.call(messages);
+        return args.join(' ');
+    }
 
     function log(level, message) {
         if (levels.indexOf(level) >= levels.indexOf(self.level)) {
