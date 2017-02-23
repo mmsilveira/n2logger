@@ -1,6 +1,6 @@
 {
   "name": "n2logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "node simple logger level",
   "main": "index.js",
   "scripts": {
